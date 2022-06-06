@@ -51,13 +51,17 @@
                 <img
                   src="css\resources\img\imagenes-redimensionadas\fugazzeta_cleanup.jpg"
                   alt="Fugazzeta"
-                />
+                />                
                 <figcaption>
                   <h3>Fugazzeta</h3>
-                  <p><sup class="red">Antes</sup><del class="red">$1500</del><sup>Ahora</sup>$1400</p>
+                  <p>
+                    <sup class="red">Antes</sup><del class="red">$1500</del
+                    ><sup>Ahora</sup>$1400
+                  </p>
                   <time> 23/05/2022 </time>
                 </figcaption>
               </figure>
+              <button class="button" value="1">Añadir al carrito<span class="fa-solid fa-cart-shopping"></span></button>
             </div>
           </li>
           <li>
@@ -69,10 +73,14 @@
                 />
                 <figcaption>
                   <h3>Pizza Cuatro Quesos</h3>
-                  <p><sup class="red">Antes</sup><del class="red">$2000</del><sup>Ahora</sup>$1900</p>
+                  <p>
+                    <sup class="red">Antes</sup><del class="red">$2000</del
+                    ><sup>Ahora</sup>$1900
+                  </p>
                   <time> 23/05/2022 </time>
                 </figcaption>
               </figure>
+              <button class="button" value="2">Añadir al carrito<span class="fa-solid fa-cart-shopping"></span></button>
             </div>
           </li>
           <li>
@@ -84,10 +92,14 @@
                 />
                 <figcaption>
                   <h3>Pizza de Albahaca</h3>
-                  <p><sup class="red">Antes</sup><del class="red">$1800</del><sup>Ahora</sup>$1700</p>
+                  <p>
+                    <sup class="red">Antes</sup><del class="red">$1800</del
+                    ><sup>Ahora</sup>$1700
+                  </p>
                   <time> 23/05/2022 </time>
                 </figcaption>
               </figure>
+              <button class="button" value="3">Añadir al carrito<span class="fa-solid fa-cart-shopping"></span></button>
             </div>
           </li>
           <li>
@@ -99,10 +111,14 @@
                 />
                 <figcaption>
                   <h3>Pizza de Muzzarella</h3>
-                  <p><sup class="red">Antes</sup><del class="red">$1600</del><sup>Ahora</sup>$1500</p>
+                  <p>
+                    <sup class="red">Antes</sup><del class="red">$1600</del
+                    ><sup>Ahora</sup>$1500
+                  </p>
                   <time> 23/05/2022 </time>
                 </figcaption>
               </figure>
+              <button class="button" value="4">Añadir al carrito<span class="fa-solid fa-cart-shopping"></span></button>
             </div>
           </li>
           <li>
@@ -114,10 +130,14 @@
                 />
                 <figcaption>
                   <h3>Pizza Napolitana</h3>
-                  <p><sup class="red">Antes</sup><del class="red">$2000</del><sup>Ahora</sup>$1900</p>
+                  <p>
+                    <sup class="red">Antes</sup><del class="red">$2000</del
+                    ><sup>Ahora</sup>$1900
+                  </p>
                   <time> 23/05/2022 </time>
                 </figcaption>
               </figure>
+              <button class="button" value="5">Añadir al carrito<span class="fa-solid fa-cart-shopping"></span></button>
             </div>
           </li>
           <li>
@@ -129,14 +149,30 @@
                 />
                 <figcaption>
                   <h3>Rúcula y Jamón Crudo</h3>
-                  <p><sup class="red">Antes</sup><del class="red">$2600</del><sup>Ahora</sup>$2500</p>
+                  <p>
+                    <sup class="red">Antes</sup><del class="red">$2600</del
+                    ><sup>Ahora</sup>$2500
+                  </p>
                   <time> 23/05/2022 </time>
                 </figcaption>
               </figure>
+              <button class="button" value="6">Añadir al carrito<span class="fa-solid fa-cart-shopping"></span></button>
             </div>
           </li>
         </ul>
       </div>
     </header>
+    <footer>
+      <p>&copy;2022</p>
+    </footer>
+    <script>
+      let countButtons = document.querySelectorAll("button").length;
+      for i= 0; i < countButtons; i++{
+        document.querySelectorAll("button") [i].addEventListener("click", showValue);
+      }
+      function showValue(){
+        console.log(this.value);
+      }
+    </script>
   </body>
 </html>
